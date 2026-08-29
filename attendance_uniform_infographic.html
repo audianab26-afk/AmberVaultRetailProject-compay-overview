@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amber Vault Retail — Attendance & Uniform Standards</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap');
+
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #F7EFE9;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrap {
+    max-width: 760px;
+    width: 100%;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 34px;
+    color: #4A2A1B;
+    text-align: center;
+    margin: 0 0 8px;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #8A6A57;
+    font-size: 14px;
+    margin: 0 0 32px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: #FFFFFF;
+    border: 1px solid #E6D4C6;
+    border-radius: 14px;
+    padding: 24px;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .icon-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4A2A1B;
+    color: #F2D9A8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #4A2A1B;
+  }
+
+  .stats {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .stat {
+    flex: 1;
+    background: #F7EFE9;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #A0522D;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: #8A6A57;
+    margin-top: 2px;
+  }
+
+  .item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid #EFE3D8;
+  }
+
+  .item:first-of-type {
+    border-top: none;
+  }
+
+  .item-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #A0522D;
+  }
+
+  .item-text {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #5C4331;
+  }
+
+  .footer-note {
+    text-align: center;
+    font-size: 12px;
+    color: #A98F7C;
+    margin-top: 28px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Before your first shift</h1>
+  <p class="subtitle">Amber Vault Retail · Onboarding Handbook</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 0 1 6 0c0 1.5-.5 2.5-1 3.5"/><path d="M6.5 9a5.5 5.5 0 0 1 11 0c0 3-1 5-2 7"/><path d="M12 15v3"/><path d="M9.5 20c1-1 1.5-2.5 1.5-4"/></svg>
+        </div>
+        <div class="card-title">Attendance</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">15 min</div>
+          <div class="stat-label">early, in uniform</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3x</div>
+          <div class="stat-label">missed logs = action</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        <div class="item-text">Clock in at the biometric scanner by the breakroom</div>
+      </div>
+      <div class="item">
+        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div class="item-text">Arrive dressed and ready before your shift starts</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4 L4 8 L7 11 L9 9 V20 H15 V9 L17 11 L20 8 L16 4 C16 6 14 7 12 7 C10 7 8 6 8 4Z"/></svg>
+        </div>
+        <div class="card-title">Uniform</div>
+      </div>
+
+      <div class="item" style="border-top:none">
+        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 21v-3a3 3 0 0 1 6 0v3"/></svg>
+        <div class="item-text">Company ID badge visible at all times</div>
+      </div>
+      <div class="item">
+        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="7" rx="1"/><path d="M6 10 L8 4 H16 L18 10"/></svg>
+        <div class="item-text">Shirt pressed, tucked, no outside logos</div>
+      </div>
+      <div class="item">
+        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 C4 14 6 12 9 12 C10 12 10.5 11 11.5 11 C13 11 13 13 15 13 C18 13 20 15 20 18 Z"/></svg>
+        <div class="item-text">Black, slip-resistant, fully enclosed shoes</div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="footer-note">Screenshot each card and drop into a Rise Image block, or rebuild with List blocks using this copy</p>
+</div>
+</body>
+</html>

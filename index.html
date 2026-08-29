@@ -2,46 +2,31 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amber Vault Retail — Attendance & Uniform Standards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lustria&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap');
-
   body {
     margin: 0;
     padding: 40px 20px;
     background: #F7EFE9;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Slab', Georgia, 'Times New Roman', serif;
     display: flex;
     justify-content: center;
   }
 
   .wrap {
-    max-width: 760px;
+    max-width: 1040px;
     width: 100%;
-  }
-
-  h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-size: 34px;
-    color: #4A2A1B;
-    text-align: center;
-    margin: 0 0 8px;
-  }
-
-  .subtitle {
-    text-align: center;
-    color: #8A6A57;
-    font-size: 14px;
-    margin: 0 0 32px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    align-items: stretch;
+    gap: 22px;
   }
 
   @media (max-width: 640px) {
@@ -50,114 +35,121 @@
 
   .card {
     background: #FFFFFF;
-    border: 1px solid #E6D4C6;
-    border-radius: 14px;
-    padding: 24px;
+    border: 1.5px solid #DFC7B3;
+    border-radius: 16px;
+    padding: 44px;
+    box-shadow: 0 4px 18px rgba(74, 42, 27, 0.07);
   }
 
   .card-header {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 18px;
+    gap: 14px;
+    margin-bottom: 22px;
   }
 
   .icon-badge {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     background: #4A2A1B;
     color: #F2D9A8;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     flex-shrink: 0;
   }
 
   .card-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lustria', Georgia, 'Times New Roman', serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 25px;
     color: #4A2A1B;
+    margin: 0;
+  }
+
+  .item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .stats {
     display: flex;
-    gap: 10px;
-    margin-bottom: 18px;
+    gap: 12px;
+    margin-bottom: 22px;
   }
 
   .stat {
     flex: 1;
     background: #F7EFE9;
     border-radius: 10px;
-    padding: 12px;
+    padding: 14px;
     text-align: center;
   }
 
   .stat-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lustria', Georgia, 'Times New Roman', serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 25px;
     color: #A0522D;
   }
 
   .stat-label {
-    font-size: 11px;
-    color: #8A6A57;
-    margin-top: 2px;
+    font-size: 13.5px;
+    color: #7A5C49;
+    margin-top: 3px;
+    line-height: 1.4;
   }
 
   .item {
     display: flex;
-    gap: 12px;
-    padding: 10px 0;
+    gap: 14px;
+    padding: 12px 0;
     border-top: 1px solid #EFE3D8;
   }
 
   .item:first-of-type {
     border-top: none;
+    padding-top: 0;
   }
 
   .item-icon {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     flex-shrink: 0;
     margin-top: 2px;
     color: #A0522D;
   }
 
   .item-text {
-    font-size: 14px;
-    line-height: 1.55;
-    color: #5C4331;
-  }
-
-  .footer-note {
-    text-align: center;
-    font-size: 12px;
-    color: #A98F7C;
-    margin-top: 28px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4A3527;
+    font-weight: 500;
   }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>Before your first shift</h1>
-  <p class="subtitle">Amber Vault Retail · Onboarding Handbook</p>
-
+<main class="wrap">
   <div class="grid">
 
-    <div class="card">
+    <section class="card" aria-labelledby="attendance-title">
       <div class="card-header">
-        <div class="icon-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 0 1 6 0c0 1.5-.5 2.5-1 3.5"/><path d="M6.5 9a5.5 5.5 0 0 1 11 0c0 3-1 5-2 7"/><path d="M12 15v3"/><path d="M9.5 20c1-1 1.5-2.5 1.5-4"/></svg>
+        <div class="icon-badge" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="5" width="16" height="15" rx="2"/>
+            <path d="M4 9.5h16"/>
+            <path d="M8.5 3v3.5"/>
+            <path d="M15.5 3v3.5"/>
+            <path d="M9 14.5l2 2 4.5-4.5"/>
+          </svg>
         </div>
-        <div class="card-title">Attendance</div>
+        <h2 id="attendance-title" class="card-title">Attendance</h2>
       </div>
 
-      <div class="stats">
+      <div class="stats" role="group" aria-label="Attendance requirements at a glance">
         <div class="stat">
           <div class="stat-num">15 min</div>
           <div class="stat-label">early, in uniform</div>
@@ -168,41 +160,59 @@
         </div>
       </div>
 
-      <div class="item">
-        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-        <div class="item-text">Clock in at the biometric scanner by the breakroom</div>
-      </div>
-      <div class="item">
-        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <div class="item-text">Arrive dressed and ready before your shift starts</div>
-      </div>
-    </div>
+      <ul class="item-list">
+        <li class="item">
+          <svg class="item-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          <div>
+            <div class="item-text">Clock in at the biometric scanner by the breakroom</div>
+          </div>
+        </li>
+        <li class="item">
+          <svg class="item-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div>
+            <div class="item-text">Arrive dressed and ready before your shift starts</div>
+          </div>
+        </li>
+        <li class="item">
+          <svg class="item-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 16.5v.01"/><path d="M10.4 4.5 3.6 17a1.8 1.8 0 0 0 1.6 2.6h13.6a1.8 1.8 0 0 0 1.6-2.6L13.6 4.5a1.8 1.8 0 0 0-3.2 0Z"/></svg>
+          <div>
+            <div class="item-text">3 missed clock-ins within a single calendar month automatically triggers disciplinary action</div>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <div class="card">
+    <section class="card" aria-labelledby="uniform-title">
       <div class="card-header">
-        <div class="icon-badge">
+        <div class="icon-badge" aria-hidden="true">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4 L4 8 L7 11 L9 9 V20 H15 V9 L17 11 L20 8 L16 4 C16 6 14 7 12 7 C10 7 8 6 8 4Z"/></svg>
         </div>
-        <div class="card-title">Uniform</div>
+        <h2 id="uniform-title" class="card-title">Uniform</h2>
       </div>
 
-      <div class="item" style="border-top:none">
-        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 21v-3a3 3 0 0 1 6 0v3"/></svg>
-        <div class="item-text">Company ID badge visible at all times</div>
-      </div>
-      <div class="item">
-        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="7" rx="1"/><path d="M6 10 L8 4 H16 L18 10"/></svg>
-        <div class="item-text">Shirt pressed, tucked, no outside logos</div>
-      </div>
-      <div class="item">
-        <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 C4 14 6 12 9 12 C10 12 10.5 11 11.5 11 C13 11 13 13 15 13 C18 13 20 15 20 18 Z"/></svg>
-        <div class="item-text">Black, slip-resistant, fully enclosed shoes</div>
-      </div>
-    </div>
+      <ul class="item-list">
+        <li class="item" style="border-top:none; padding-top:0">
+          <svg class="item-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 21v-3a3 3 0 0 1 6 0v3"/></svg>
+          <div>
+            <div class="item-text">Company ID badge visible at all times</div>
+          </div>
+        </li>
+        <li class="item">
+          <svg class="item-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="7" rx="1"/><path d="M6 10 L8 4 H16 L18 10"/></svg>
+          <div>
+            <div class="item-text">Shirt pressed, tucked, no outside logos</div>
+          </div>
+        </li>
+        <li class="item">
+          <svg class="item-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 C4 14 6 12 9 12 C10 12 10.5 11 11.5 11 C13 11 13 13 15 13 C18 13 20 15 20 18 Z"/></svg>
+          <div>
+            <div class="item-text">Black, slip-resistant, fully enclosed shoes</div>
+          </div>
+        </li>
+      </ul>
+    </section>
 
   </div>
-
-  <p class="footer-note">Screenshot each card and drop into a Rise Image block, or rebuild with List blocks using this copy</p>
-</div>
+</main>
 </body>
 </html>
